@@ -15,6 +15,8 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.rayyan22207.tutorialmod.block.ModBlocks;
+import net.rayyan22207.tutorialmod.item.ModCreativeModTabs;
 import net.rayyan22207.tutorialmod.item.Moditems;
 import org.slf4j.Logger;
 
@@ -31,7 +33,13 @@ public class TutorialMod
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModCreativeModTabs.register(modEventBus);
+
+        //new items
         Moditems.register(modEventBus);
+        //new blocks
+        ModBlocks.register(modEventBus);
+
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
