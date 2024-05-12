@@ -13,6 +13,8 @@
   "block.myfirstmod.end_stone_sapphire_ore": "Endstone Sapphire Ore",
   "block.myfirstmod.nether_sapphire_ore": "Nether Sapphire Ore",
 
+  "block.myfirstmod.sound_block": "Sound Block",
+
 
   "creativetab.tutorial_tab": "Sapphire Tutorial Tab"
 }
